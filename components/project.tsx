@@ -23,19 +23,19 @@ export default function Project({
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   const handlePlayDemoClick = () => {
-    if (playLink !== "") {
+    if (playLink.toString() !== "") {
       window.open(playLink, "_blank"); // Open in a new tab/window
     }
   };
 
   const handleWatchVideoClick = () => {
-    if (youtubeLink !== "") {
+    if (youtubeLink.toString() !== "") {
       window.open(youtubeLink, "_blank"); // Open in a new tab/window
     }
   };
 
   const handleSourceCodeClick = () => {
-    if (sourceCodeLink !== "") {
+    if (sourceCodeLink.toString() !== "") {
       window.open(sourceCodeLink, "_blank"); // Open in a new tab/window
     }
   };
