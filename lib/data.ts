@@ -67,7 +67,7 @@ export const projectsData = [
   {
     title: "Neon Engine",
     description:
-      "Neon Engine is a 3D Graphics Engine that I implemented from scratch in C++ using OpenGL, glm, ImGui and Assimp.",
+      "Neon Engine is a 3D Graphics Engine that I implemented in C++ from scratch using OpenGL, glm, ImGui and Assimp. With Neon Engine you can upload 3D models with PBR (Physically Based Rendering) textures and skeletal animations; perform transformations to the models; add point lights, spot lights and directional lights with bloom; upload an HDRI map to do Image Based Lighting with PBR; upload PBR materials and change the materials of the models in real time.",
     tags: ["C++", "OpenGL", "glm", "ImGui", "Assimp"],
     imageUrl: neonEngine,
     sourceCodeLink: "https://github.com/AlonsoCerpa/NeonEngine",
@@ -77,7 +77,7 @@ export const projectsData = [
   {
     title: "Unity Video Game 1",
     description:
-      "Third person shooter video game made in Unity that uses ChatGPT to empower NPCs.",
+      "Third person shooter video game made in Unity that uses ChatGPT to empower NPCs. Third person shooter video game made in Unity that uses ChatGPT to empower NPCs. Third person shooter video game made in Unity that uses ChatGPT to empower NPCs. Third person shooter video game made in Unity that uses ChatGPT to empower NPCs.",
     tags: ["Unity", "C#", "AI", "ChatGPT"],
     imageUrl: unityVideoGame1,
     sourceCodeLink: "https://github.com/",
