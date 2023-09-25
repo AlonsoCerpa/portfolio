@@ -23,21 +23,15 @@ export default function Project({
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   const handlePlayDemoClick = () => {
-    if (playLink.toString() !== "") {
-      window.open(playLink, "_blank"); // Open in a new tab/window
-    }
+    window.open(playLink, "_blank"); // Open in a new tab/window
   };
 
   const handleWatchVideoClick = () => {
-    if (youtubeLink.toString() !== "") {
-      window.open(youtubeLink, "_blank"); // Open in a new tab/window
-    }
+    window.open(youtubeLink, "_blank"); // Open in a new tab/window
   };
 
   const handleSourceCodeClick = () => {
-    if (sourceCodeLink.toString() !== "") {
-      window.open(sourceCodeLink, "_blank"); // Open in a new tab/window
-    }
+    window.open(sourceCodeLink, "_blank"); // Open in a new tab/window
   };
 
   return (
@@ -65,7 +59,7 @@ export default function Project({
               </li>
             ))}
           </ul>
-          {playLink !== "" && (
+          {playLink.toString() !== "" && (
             <button
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
               onClick={handlePlayDemoClick}
@@ -73,7 +67,7 @@ export default function Project({
               Play live demo!
             </button>
           )}
-          {youtubeLink !== "" && (
+          {youtubeLink.toString() !== "" && (
             <button
               className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4"
               onClick={handleWatchVideoClick}
@@ -81,7 +75,7 @@ export default function Project({
               Watch YouTube video!
             </button>
           )}
-          {sourceCodeLink !== "" && (
+          {sourceCodeLink.toString() !== "" && (
             <button
               className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded mt-4"
               onClick={handleSourceCodeClick}
