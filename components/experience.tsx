@@ -10,6 +10,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
+import unityVideoGame1 from "@/public/unity_video_game1.png";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
@@ -37,15 +38,23 @@ export default function Experience() {
                     : "0.4rem solid rgba(255, 255, 255, 0.5)",
               }}
               date={item.date}
-              icon={item.icon}
+              icon={
+                <div className="flex justify-center items-center w-full h-full">
+                  <img
+                    src={item.icon.src}
+                    alt="img"
+                    className="w-[60%] h-[60%] object-contain"
+                  />
+                </div>
+              }
               iconStyle={{
                 background:
                   theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
                 fontSize: "1.5rem",
               }}
             >
-              <h3 className="font-semibold capitalize">{item.title}</h3>
-              <p className="font-normal !mt-0">{item.location}</p>
+              <h3 className="font-bold capitalize text-2xl">{item.title}</h3>
+              <h4 className="font-normal !mt-0 text-xl">{item.company}</h4>
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
               </p>

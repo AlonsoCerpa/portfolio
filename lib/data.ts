@@ -2,9 +2,12 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import neonEngine from "@/public/neonengine.png";
+import unityVideoGame1 from "@/public/unity_video_game1.png";
+import unrealEngineVideoGame1 from "@/public/unreal_engine_video_game1.png";
+import metacerv from "@/public/metacerv.jpg";
+import gitoc from "@/public/gitoc.jpg";
+import prociencia from "@/public/prociencia.jpg";
 
 export const links = [
   {
@@ -35,73 +38,72 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Software Engineer",
+    company: "(GI-TOC) Global Initiative against Transnational Organized Crime",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+      "I was hired by a fellow of the Resilience Fund Fellowship 2021 program to research, design, implement and document an Android/Web application for collecting geographic points on a map where crimes occurred in Peru.",
+    icon: gitoc,
+    date: "May 2021 - Dec 2021",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Researcher",
+    company: "Prociencia Peru",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "I worked as a researcher thanks to the CONCYTEC – WORLD BANK Project Improvement and Expansion of the Services of the National System of Science Technology and Technological Innovation in Peru.",
+    icon: prociencia,
+    date: "June 2020 - June 2022",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Unity 3D Developer",
+    company: "MetaCERV",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "I developed 3D experiences using the game engine Unity to create digital twins of mining corporations. I programmed the functionality of digital twins using the C# programming language.",
+    icon: metacerv,
+    date: "June 2023 - July 2023",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Neon Engine",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Neon Engine is a 3D Graphics Engine that I implemented from scratch in C++ using OpenGL, glm, ImGui and Assimp.",
+    tags: ["C++", "OpenGL", "glm", "ImGui", "Assimp"],
+    imageUrl: neonEngine,
+    sourceCodeLink: "https://github.com/AlonsoCerpa/NeonEngine",
+    youtubeLink: "https://youtu.be/rJXNfAThIbU?si=Zp-SbpgstTTHIxRT",
+    playLink: "",
   },
   {
-    title: "rmtDev",
+    title: "Unity Video Game 1",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Third person shooter video game made in Unity that uses ChatGPT to empower NPCs.",
+    tags: ["Unity", "C#", "AI", "ChatGPT"],
+    imageUrl: unityVideoGame1,
+    sourceCodeLink: "https://github.com/",
+    youtubeLink: "https://www.youtube.com/",
+    playLink: "https://unity.com/",
   },
   {
-    title: "Word Analytics",
+    title: "Unreal Engine Game 1",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "First person shooter multiplayer video game made in Unreal Engine 5.",
+    tags: ["Unreal Engine 5", "C++", "AI", "Networking"],
+    imageUrl: unrealEngineVideoGame1,
+    sourceCodeLink: "https://github.com/",
+    youtubeLink: "https://www.youtube.com/",
+    playLink: "https://www.unrealengine.com/",
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
+  "Unreal Engine 5",
+  "Unity",
+  "C++",
+  "C#",
+  "OpenGL",
   "Python",
-  "Django",
-  "Framer Motion",
+  "Algorithms",
+  "Data Structures",
+  "Computational Complexity",
 ] as const;

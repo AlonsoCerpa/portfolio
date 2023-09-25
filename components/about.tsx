@@ -19,30 +19,16 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+      I studied Computer Science, have experience in Unity/C# and Computer Graphics (C++, OpenGL, glm, assimp, Dear ImGui), and in Object Detection and Segmentation with Deep Learning (python, detectron2, pytorch). I program mainly in C++, C# and Python. I like Competitive Programming (Data Structures and Algorithms), Computer Graphics and Deep Learning. I have developed small projects with Unity and Unreal Engine 5. Responsible, hard-worker, creative and project oriented. More than 2 years of experience in research and publishing papers.
       </p>
 
       <p>
         <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
+        video games, watching movies, and meditating. I also enjoy{" "}
         <span className="font-medium">learning new things</span>. I am currently
         learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        <span className="font-medium">computer graphics and mathematics</span>. I'm also
+        learning how to design video games.
       </p>
     </motion.section>
   );
