@@ -10,8 +10,8 @@ import { Toaster } from "react-hot-toast";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Alonso | Personal Portfolio",
-  description: "Alonso is a game programmer with experience in Unreal Engine 5 and Unity.",
+  title: "Alonso Cerpa | Portfolio",
+  description: "Alonso Cerpa is a game programmer with experience in Unreal Engine 5 and Unity.",
 };
 
 export default function RootLayout({
