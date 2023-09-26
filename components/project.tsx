@@ -80,7 +80,7 @@ export default function Project({
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
               onClick={handlePlayDemoClick}
             >
-              Play live demo!
+              RUN the Project in the browser!
             </button>
           )}
           {youtubeLink.toString() !== "" && (
@@ -88,7 +88,7 @@ export default function Project({
               className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4"
               onClick={handleWatchVideoClick}
             >
-              Watch YouTube video!
+              WATCH a YouTube video!
             </button>
           )}
           {sourceCodeLink.toString() !== "" && (
@@ -96,7 +96,7 @@ export default function Project({
               className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded mt-4"
               onClick={handleSourceCodeClick}
             >
-              Get Source Code!
+              GET the Source Code!
             </button>
           )}
         </div>
