@@ -2,9 +2,16 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import neonEngine from "@/public/neonengine.png";
-import unityVideoGame1 from "@/public/unity_video_game1.png";
-import unrealEngineVideoGame1 from "@/public/unreal_engine_video_game1.png";
+import neonEngineGif1 from "@/public/neon_engine_gif1.gif";
+import neonEngineGif2 from "@/public/neon_engine_gif2.gif";
+import neonEngineImage1 from "@/public/neon_engine_image1.png";
+import neonEngineImage2 from "@/public/neon_engine_image2.png";
+import unityVideoGame1Img1 from "@/public/unity_vg1_img1.png";
+import unityVideoGame1Img2 from "@/public/unity_vg1_img2.png";
+import unityVideoGame1Img3 from "@/public/unity_vg1_img3.png";
+import unrealVideoGame1Img1 from "@/public/unreal_vg1_img1.png";
+import unrealVideoGame1Img2 from "@/public/unreal_vg1_img2.png";
+import unrealVideoGame1Img3 from "@/public/unreal_vg1_img3.png";
 import metacerv from "@/public/metacerv.jpg";
 import gitoc from "@/public/gitoc.jpg";
 import prociencia from "@/public/prociencia.jpg";
@@ -69,27 +76,27 @@ export const projectsData = [
     description:
       "Neon Engine is a 3D Graphics Engine that I implemented in C++ from scratch using OpenGL, glm, ImGui and Assimp. With Neon Engine you can upload 3D models with PBR (Physically Based Rendering) textures and skeletal animations; perform transformations to the models; add point lights, spot lights and directional lights with bloom; upload an HDRI map to do Image Based Lighting with PBR; upload PBR materials and change the materials of the models in real time.",
     tags: ["C++", "OpenGL", "glm", "ImGui", "Assimp"],
-    imageUrl: neonEngine,
+    imageUrl: [neonEngineGif1, neonEngineGif2, neonEngineImage1, neonEngineImage2],
     sourceCodeLink: "https://github.com/AlonsoCerpa/NeonEngine",
     youtubeLink: "https://youtu.be/rJXNfAThIbU?si=Zp-SbpgstTTHIxRT",
     playLink: "",
   },
   {
-    title: "Unity Video Game 1",
+    title: "Unity Video Game 1 (WORK IN PROGRESS)",
     description:
-      "Third person shooter video game made in Unity that uses ChatGPT to empower NPCs. Third person shooter video game made in Unity that uses ChatGPT to empower NPCs. Third person shooter video game made in Unity that uses ChatGPT to empower NPCs. Third person shooter video game made in Unity that uses ChatGPT to empower NPCs.",
+      "(WORK IN PROGRESS) Third person shooter video game made in Unity that uses ChatGPT to empower NPCs. Third person shooter video game made in Unity that uses ChatGPT to empower NPCs. Third person shooter video game made in Unity that uses ChatGPT to empower NPCs. Third person shooter video game made in Unity that uses ChatGPT to empower NPCs.",
     tags: ["Unity", "C#", "AI", "ChatGPT"],
-    imageUrl: unityVideoGame1,
+    imageUrl: [unityVideoGame1Img1, unityVideoGame1Img2, unityVideoGame1Img3],
     sourceCodeLink: "https://github.com/",
     youtubeLink: "https://www.youtube.com/",
     playLink: "https://unity.com/",
   },
   {
-    title: "Unreal Engine Game 1",
+    title: "Unreal Engine Game 1 (WORK IN PROGRESS)",
     description:
-      "First person shooter multiplayer video game made in Unreal Engine 5.",
+      "(WORK IN PROGRESS) First person shooter multiplayer video game made in Unreal Engine 5.",
     tags: ["Unreal Engine 5", "C++", "AI", "Networking"],
-    imageUrl: unrealEngineVideoGame1,
+    imageUrl: [unrealVideoGame1Img1, unrealVideoGame1Img2, unrealVideoGame1Img3],
     sourceCodeLink: "https://github.com/",
     youtubeLink: "https://www.youtube.com/",
     playLink: "https://www.unrealengine.com/",
