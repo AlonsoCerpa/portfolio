@@ -63,15 +63,15 @@ export default function Project({
           </ul>
 
           <Carousel infiniteLoop showThumbs={false}>
-            {videoUrl.map((video, index) => (
+            {videoUrl.map((videoName, index1) => (
               <video autoPlay loop muted>
-                <source src={video} type="video/mp4" />
+                <source src={videoName} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             ))}
-            {imageUrl.map((image, index) => (
-              <div key={index}>
-                <img src={image.src} alt={`Slide ${index + 1}`} />
+            {imageUrl.map((image, index2) => (
+              <div key={index2}>
+                <img src={image.src} alt={`Slide ${index2 + 1}`} />
               </div>
             ))}
           </Carousel>
