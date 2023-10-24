@@ -10,6 +10,7 @@ export default function Project({
   title,
   description,
   tags,
+  videoUrl,
   imageUrl,
   sourceCodeLink,
   youtubeLink,
@@ -62,11 +63,17 @@ export default function Project({
           </ul>
 
           <Carousel infiniteLoop showThumbs={false}>
-          {imageUrl.map((image, index) => (
-            <div key={index}>
-              <img src={image.src} alt={`Slide ${index + 1}`} />
-            </div>
-          ))}
+            {videoUrl.map((video, index) => (
+              <video autoPlay loop muted>
+                <source src={video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            ))}
+            {imageUrl.map((image, index) => (
+              <div key={index}>
+                <img src={image.src} alt={`Slide ${index + 1}`} />
+              </div>
+            ))}
           </Carousel>
 
           {playLink.toString() !== "" && (

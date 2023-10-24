@@ -10,7 +10,6 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
-import unityVideoGame1 from "@/public/unity_video_game1.png";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
