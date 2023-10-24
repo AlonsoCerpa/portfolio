@@ -64,7 +64,7 @@ export default function Project({
 
           <Carousel infiniteLoop showThumbs={false}>
             {videoUrl.map((videoName, index1) => (
-              <video autoPlay loop muted>
+              <video key={index1} autoPlay loop muted>
                 <source src={videoName} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
