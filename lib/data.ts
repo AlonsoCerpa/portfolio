@@ -2,7 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import neonEngineGif1 from "@/public/neon_engine_gif1.gif";
+import neonEngineGif1 from "@/public/aux1.gif";
 import neonEngineGif2 from "@/public/neon_engine_gif2.gif";
 import neonEngineImage1 from "@/public/neon_engine_image1.png";
 import neonEngineImage2 from "@/public/neon_engine_image2.png";
@@ -76,7 +76,7 @@ export const projectsData = [
     description:
       "Neon Engine is a 3D Graphics Engine that I implemented in C++ from scratch using OpenGL, glm, ImGui and Assimp. With Neon Engine you can upload 3D models with PBR (Physically Based Rendering) textures and skeletal animations; perform transformations to the models; add point lights, spot lights and directional lights with bloom; upload an HDRI map to do Image Based Lighting with PBR; upload PBR materials and change the materials of the models in real time.",
     tags: ["C++", "OpenGL", "glm", "ImGui", "Assimp"],
-    imageUrl: [neonEngineGif1, neonEngineGif2, neonEngineImage1, neonEngineImage2],
+    imageUrl: [neonEngineGif1, neonEngineImage1, neonEngineImage2],
     sourceCodeLink: "https://github.com/AlonsoCerpa/NeonEngine",
     youtubeLink: "https://youtu.be/rJXNfAThIbU?si=Zp-SbpgstTTHIxRT",
     playLink: "",
