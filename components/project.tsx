@@ -3,6 +3,7 @@ import { projectsData } from "@/lib/data";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import React from 'react';
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -63,18 +64,22 @@ export default function Project({
           </ul>
 
           <Carousel infiniteLoop showThumbs={false}>
-            {videoUrl.map((videoName, index1) => (
-              <video key={index1} autoPlay loop muted>
-                <source src={videoName} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            ))}
-            {imageUrl.map((image, index2) => (
-              <div key={index2}>
-                <img src={image.src} alt={`Slide ${index2 + 1}`} />
-              </div>
-            ))}
-          </Carousel>
+  {videoUrl.map((videoName, index1) => (
+    <React.Fragment key={index1}>
+      <video autoPlay loop muted>
+        <source src={videoName} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </React.Fragment>
+  ))}
+
+{imageUrl.map((image, index2) => (
+      <div key={index2}>
+        <img src={image.src} alt={`Slide ${index2 + 1}`} />
+      </div>
+    ))}
+</Carousel>
+
 
           {playLink.toString() !== "" && (
             <button
