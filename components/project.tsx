@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import React from 'react';
+import { ReactChild } from 'react';
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -64,28 +65,28 @@ export default function Project({
           </ul>
 
           <Carousel infiniteLoop showThumbs={false}>
-            {videoUrl.map((videoName, index1) => {
-              const fileExtension = videoName.slice(-3); // Get the last 3 characters (file extension)
-              
-              if (fileExtension === 'mp4') {
-                return (
-                  <video key={index1} autoPlay loop muted>
-                    <source src={videoName} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                );
-              } else if (fileExtension === 'png') {
-                return (
-                  <div key={index1}>
-                    <img src={videoName} alt={`Slide ${index1 + 1}`} />
-                  </div>
-                );
-              }
+          {videoUrl.map((videoName, index1): ReactChild | null => {
+            const fileExtension = videoName.slice(-3); // Get the last 3 characters (file extension)
+            
+            if (fileExtension === 'mp4') {
+              return (
+                <video key={index1} autoPlay loop muted>
+                  <source src={videoName} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              );
+            } else if (fileExtension === 'png') {
+              return (
+                <div key={index1}>
+                  <img src={videoName} alt={`Slide ${index1 + 1}`} />
+                </div>
+              );
+            }
 
-              // Handle other file extensions or invalid cases here
-              return null;
-            })}
-          </Carousel>
+            // Handle other file extensions or invalid cases by returning null
+            return null;
+          })}
+        </Carousel>
 
 
 
