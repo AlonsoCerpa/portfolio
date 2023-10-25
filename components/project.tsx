@@ -64,21 +64,23 @@ export default function Project({
           </ul>
 
           <Carousel infiniteLoop showThumbs={false}>
-  {videoUrl.map((videoName, index1) => (
-    <React.Fragment key={index1}>
-      <video autoPlay loop muted>
-        <source src={videoName} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </React.Fragment>
-  ))}
-
-{imageUrl.map((image, index2) => (
-      <div key={index2}>
-        <img src={image.src} alt={`Slide ${index2 + 1}`} />
-      </div>
-    ))}
-</Carousel>
+      {/* Wrap video elements inside a parent div or use React.Fragment */}
+      {videoUrl.map((videoName, index1) => (
+        <div key={index1}>
+          <video autoPlay loop muted>
+            <source src={videoName} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      ))}
+      
+      {/* Wrap image elements inside a parent div or use React.Fragment */}
+      {imageUrl.map((image, index2) => (
+        <div key={index2}>
+          <img src={image.src} alt={`Slide ${index2 + 1}`} />
+        </div>
+      ))}
+    </Carousel>
 
 
           {playLink.toString() !== "" && (
