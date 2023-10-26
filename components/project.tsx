@@ -4,7 +4,6 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import React from 'react';
-import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -14,8 +13,7 @@ export default function Project({
   title,
   description,
   tags,
-  videoUrl,
-  imageUrl,
+  videoImageUrl,
   sourceCodeLink,
   youtubeLink,
   playLink,
@@ -38,15 +36,6 @@ export default function Project({
 
   const handleSourceCodeClick = () => {
     window.open(sourceCodeLink, "_blank"); // Open in a new tab/window
-  };
-
-  const settings = {
-    dots: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 2000,
   };
 
   return (
@@ -77,7 +66,7 @@ export default function Project({
 
 
           <Carousel infiniteLoop showThumbs={false} className="mb-5">
-            {videoUrl.map((item, index) => (
+            {videoImageUrl.map((item, index) => (
               <div key={index}>
                 {item.type === 'image' ? (
                   <img src={item.src} alt={item.alt || ''} />

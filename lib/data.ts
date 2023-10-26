@@ -74,7 +74,7 @@ export const projectsData = [
     description:
       "Neon Engine is a 3D Graphics Engine that I implemented in C++ from scratch using OpenGL, glm, ImGui and Assimp. With Neon Engine you can upload 3D models with PBR (Physically Based Rendering) textures and skeletal animations; perform transformations to the models; add point lights, spot lights and directional lights with bloom; upload an HDRI map to do Image Based Lighting with PBR; upload PBR materials and change the materials of the models in real time.",
     tags: ["C++", "OpenGL", "glm", "ImGui", "Assimp"],
-    videoUrl: [
+    videoImageUrl: [
       { type: "video", src: "neon_engine_video1.mp4", alt: "neon_engine_video1" },
       { type: "video", src: "neon_engine_video2.mp4", alt: "neon_engine_video2" },
       { type: "image", src: "neon_engine_image1.png", alt: "neon_engine_image1" },
@@ -90,7 +90,7 @@ export const projectsData = [
     description:
       "(WORK IN PROGRESS) Third person shooter video game made in Unity that uses ChatGPT to empower NPCs. Third person shooter video game made in Unity that uses ChatGPT to empower NPCs. Third person shooter video game made in Unity that uses ChatGPT to empower NPCs. Third person shooter video game made in Unity that uses ChatGPT to empower NPCs.",
     tags: ["Unity", "C#", "AI", "ChatGPT"],
-    videoUrl: [
+    videoImageUrl: [
       { type: "image", src: "unity_vg1_img1.png", alt: "unity_vg1_img1" },
       { type: "image", src: "unity_vg1_img2.png", alt: "unity_vg1_img2" },
       { type: "image", src: "unity_vg1_img3.png", alt: "unity_vg1_img3" }
@@ -105,7 +105,7 @@ export const projectsData = [
     description:
       "(WORK IN PROGRESS) First person shooter multiplayer video game made in Unreal Engine 5.",
     tags: ["Unreal Engine 5", "C++", "AI", "Networking"],
-    videoUrl: [
+    videoImageUrl: [
       { type: "image", src: "unreal_vg1_img1.png", alt: "unreal_vg1_img1" },
       { type: "image", src: "unreal_vg1_img2.png", alt: "unreal_vg1_img2" },
       { type: "image", src: "unreal_vg1_img3.png", alt: "unreal_vg1_img3" }
