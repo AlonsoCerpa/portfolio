@@ -4,8 +4,11 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-type ProjectProps = (typeof projectsData)[number];
+type ProjectProps = (typeof projectsData)[number]
 
 export default function Project({
   title,
@@ -37,6 +40,16 @@ export default function Project({
     window.open(sourceCodeLink, "_blank"); // Open in a new tab/window
   };
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  };
+
   return (
     <motion.div
       ref={ref}
@@ -63,32 +76,20 @@ export default function Project({
             ))}
           </ul>
 
-          <Carousel infiniteLoop showThumbs={false}>
-  {videoUrl
-    .filter(videoName => videoName !== null) // Filter out null values
-    .map((videoName, index1) => {
-      const fileExtension = videoName.slice(-3); // Get the last 3 characters (file extension)
 
-      if (fileExtension === 'mp4') {
-        return (
-          <video key={index1} autoPlay loop muted>
-            <source src={videoName} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        );
-      } else if (fileExtension === 'png') {
-        return (
-          <div key={index1}>
-            <img src={videoName} alt={`Slide ${index1 + 1}`} />
-          </div>
-        );
-      }
-
-      // Handle other file extensions or invalid cases here
-      return null;
-    })}
-</Carousel>
-
+          <Slider {...settings}>
+            {videoUrl.map((videoName, index1) => (
+              <video key={index1} autoPlay loop muted>
+                <source src={videoName} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            ))}
+            {imageUrl.map((image, index2) => (
+              <div key={index2}>
+                <img src={image.src} alt={`Slide ${index2 + 1}`} />
+              </div>
+            ))}
+          </Slider>
 
 
 

@@ -74,7 +74,7 @@ export const projectsData = [
     description:
       "Neon Engine is a 3D Graphics Engine that I implemented in C++ from scratch using OpenGL, glm, ImGui and Assimp. With Neon Engine you can upload 3D models with PBR (Physically Based Rendering) textures and skeletal animations; perform transformations to the models; add point lights, spot lights and directional lights with bloom; upload an HDRI map to do Image Based Lighting with PBR; upload PBR materials and change the materials of the models in real time.",
     tags: ["C++", "OpenGL", "glm", "ImGui", "Assimp"],
-    videoUrl: ["neon_engine_image1.png", "neon_engine_video1.mp4", "neon_engine_video2.mp4"],
+    videoUrl: ["neon_engine_video1.mp4", "neon_engine_video2.mp4"],
     imageUrl: [neonEngineImage1, neonEngineImage2],
     sourceCodeLink: "https://github.com/AlonsoCerpa/NeonEngine",
     youtubeLink: "https://youtu.be/rJXNfAThIbU?si=Zp-SbpgstTTHIxRT",
@@ -85,7 +85,7 @@ export const projectsData = [
     description:
       "(WORK IN PROGRESS) Third person shooter video game made in Unity that uses ChatGPT to empower NPCs. Third person shooter video game made in Unity that uses ChatGPT to empower NPCs. Third person shooter video game made in Unity that uses ChatGPT to empower NPCs. Third person shooter video game made in Unity that uses ChatGPT to empower NPCs.",
     tags: ["Unity", "C#", "AI", "ChatGPT"],
-    videoUrl: [],
+    videoUrl: ["neon_engine_video1.mp4"],
     imageUrl: [unityVideoGame1Img1, unityVideoGame1Img2, unityVideoGame1Img3],
     sourceCodeLink: "https://github.com/",
     youtubeLink: "https://www.youtube.com/",
@@ -96,7 +96,7 @@ export const projectsData = [
     description:
       "(WORK IN PROGRESS) First person shooter multiplayer video game made in Unreal Engine 5.",
     tags: ["Unreal Engine 5", "C++", "AI", "Networking"],
-    videoUrl: [],
+    videoUrl: ["neon_engine_video2.mp4"],
     imageUrl: [unrealVideoGame1Img1, unrealVideoGame1Img2, unrealVideoGame1Img3],
     sourceCodeLink: "https://github.com/",
     youtubeLink: "https://www.youtube.com/",
