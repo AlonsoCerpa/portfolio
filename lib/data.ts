@@ -107,7 +107,7 @@ export const projectsData = [
       "(WORK IN PROGRESS) First person shooter multiplayer video game made in Unreal Engine 5.",
     tags: ["Unreal Engine 5", "C++", "AI", "Networking"],
     videoImageUrl: [
-      { type: "video", src: "neon_engine_video2.mp4", alt: "neon_engine_video2" },
+      { type: "video", src: "neon_engine_video1.mp4", alt: "neon_engine_video2" },
       { type: "image", src: "unreal_vg1_img1.png", alt: "unreal_vg1_img1" },
       { type: "image", src: "unreal_vg1_img2.png", alt: "unreal_vg1_img2" },
       { type: "image", src: "unreal_vg1_img3.png", alt: "unreal_vg1_img3" }
