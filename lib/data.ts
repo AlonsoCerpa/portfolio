@@ -77,7 +77,8 @@ export const projectsData = [
     videoUrl: [
       { type: "video", src: "neon_engine_video1.mp4", alt: "neon_engine_video1" },
       { type: "video", src: "neon_engine_video2.mp4", alt: "neon_engine_video2" },
-      { type: "image", src: "neon_engine_image1.png", alt: "neon_engine_image1" }
+      { type: "image", src: "neon_engine_image1.png", alt: "neon_engine_image1" },
+      { type: "image", src: "neon_engine_image2.png", alt: "neon_engine_image2" }
     ],
     imageUrl: [neonEngineImage1, neonEngineImage2],
     sourceCodeLink: "https://github.com/AlonsoCerpa/NeonEngine",
