@@ -42,11 +42,10 @@ export default function Project({
 
   const settings = {
     dots: true,
-    infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
   };
 
@@ -77,20 +76,22 @@ export default function Project({
           </ul>
 
 
-          <Slider {...settings}>
-            {videoUrl.map((videoName, index1) => (
-              <video key={index1} autoPlay loop muted>
-                <source src={videoName} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            ))}
-            {imageUrl.map((image, index2) => (
-              <div key={index2}>
-                <img src={image.src} alt={`Slide ${index2 + 1}`} />
+
+
+          <Carousel>
+            {videoUrl.map((item, index) => (
+              <div key={index}>
+                {item.type === 'image' ? (
+                  <img src={item.src} alt={item.alt || ''} />
+                ) : (
+                  <video width="100%" height="auto" controls>
+                    <source src={item.src} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                )}
               </div>
             ))}
-          </Slider>
-
+          </Carousel>
 
 
           {playLink.toString() !== "" && (
