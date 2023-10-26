@@ -61,7 +61,7 @@ export default function Project({
       <section className="bg-gray-100 max-w-[52rem] border border-black/5 rounded-lg overflow-hidden relative hover:bg-gray-200 transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
         <div className="pt-4 pb-7 px-5 flex flex-col h-full">
           <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 mb-4 leading-relaxed text-gray-700 dark:text-white/70">
+          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
           <ul className="flex flex-wrap mt-4 mb-4 gap-2">
@@ -76,15 +76,13 @@ export default function Project({
           </ul>
 
 
-
-
-          <Carousel>
+          <Carousel infiniteLoop showThumbs={false} className="mb-5">
             {videoUrl.map((item, index) => (
               <div key={index}>
                 {item.type === 'image' ? (
                   <img src={item.src} alt={item.alt || ''} />
                 ) : (
-                  <video width="100%" height="auto" controls>
+                  <video width="100%" height="auto" autoPlay loop muted>
                     <source src={item.src} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
