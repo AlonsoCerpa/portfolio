@@ -6,6 +6,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import React from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 
 type ProjectProps = (typeof projectsData)[number]
 
@@ -65,7 +66,32 @@ export default function Project({
           </ul>
 
 
-          <Carousel infiniteLoop showThumbs={false} className="mb-5">
+          <Carousel infiniteLoop showThumbs={false} className="mb-5"
+            renderArrowPrev={(clickHandler, hasPrev) => {
+              return (
+                <div
+                  className={`${
+                    hasPrev ? 'absolute' : 'hidden'
+                  } top-0 bottom-0 left-0 flex justify-center items-center p-3 opacity-30 hover:opacity-100 cursor-pointer z-20`}
+                  onClick={clickHandler}
+                >
+                  <FaArrowCircleLeft className="w-12 h-12 text-white" />
+                </div>
+              );
+            }}
+            renderArrowNext={(clickHandler, hasNext) => {
+              return (
+                <div
+                  className={`${
+                    hasNext ? 'absolute' : 'hidden'
+                  } top-0 bottom-0 right-0 flex justify-center items-center p-3 opacity-30 hover:opacity-100 cursor-pointer z-20`}
+                  onClick={clickHandler}
+                >
+                  <FaArrowCircleRight className="w-12 h-12 text-white" />
+                </div>
+              );
+            }}
+          >
             {videoImageUrl.map((item, index) => (
               <div key={index}>
                 {item.type === 'image' ? (

@@ -98,7 +98,7 @@ export const projectsData = [
     imageUrl: [unityVideoGame1Img1, unityVideoGame1Img2, unityVideoGame1Img3],
     sourceCodeLink: "https://github.com/",
     youtubeLink: "https://www.youtube.com/",
-    playLink: "https://unity.com/",
+    playLink: "https://play.unity.com/mg/other/webgl-builds-378681",
   },
   {
     title: "Unreal Engine Game 1 (WORK IN PROGRESS)",
