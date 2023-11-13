@@ -93,7 +93,8 @@ export const projectsData = [
     videoImageUrl: [
       { type: "image", src: "unity_vg1_img1.png", alt: "unity_vg1_img1" },
       { type: "image", src: "unity_vg1_img2.png", alt: "unity_vg1_img2" },
-      { type: "image", src: "unity_vg1_img3.png", alt: "unity_vg1_img3" }
+      { type: "image", src: "unity_vg1_img3.png", alt: "unity_vg1_img3" },
+      { type: "image", src: "unity_vg1_img4.png", alt: "unity_vg1_img4" }
     ],
     imageUrl: [unityVideoGame1Img1, unityVideoGame1Img2, unityVideoGame1Img3],
     sourceCodeLink: "https://github.com/",
